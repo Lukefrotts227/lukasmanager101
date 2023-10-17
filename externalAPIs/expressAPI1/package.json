@@ -1,0 +1,11 @@
+{
+  "name": "expressapi1",
+  "version": "1.0.0",
+  "description": "My external api for the next app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "Lukas Frotton",
+  "license": "MIT"
+}
