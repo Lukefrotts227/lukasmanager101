@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link"
+import { signIn } from "next-auth/react"; 
 import { AiOutlineGoogle, AiOutlineGithub } from "react-icons/ai";
 
 export default function LoginForm(){
@@ -16,11 +19,22 @@ export default function LoginForm(){
                         Login
                     </button>
                 </form>
-                <span className="text-white">Don't Have an Account click here <Link className="underline text-extrabold" href="/Register">Register</Link></span>
+                <span className="text-white">Don't Have an Account click here <Link className="underline text-extrabold" href="auth/register">Register</Link></span>
                 <div> 
                     <header className="text-white text-center">
-                        Or use the following providers
+                        <h1>Or use the following providers</h1>
                     </header>
+                        <div onClick ={() => signIn("github")} className="pt-5">
+                            <div className ="flex flex-row gap-2">
+                                <header className="text-white"> 
+                                    <h1>Github</h1>
+                                </header>
+                                <div>
+                                    <AiOutlineGithub size={23} />
+                                </div>
+                            </div>
+                        </div>
+                    
                 </div>
                 
             </div>

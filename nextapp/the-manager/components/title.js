@@ -7,7 +7,6 @@ export const Title = () => {
             <section className = "flex justify-center items-center">
                 <BaseLogo/>
             </section>
-
             <section>
                 <h1>MindfulTask</h1>
             </section>
