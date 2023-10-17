@@ -1,3 +1,5 @@
+import { RxArrowDown } from "react-icons/rx";
+
 export default function LoginTop(){
 
 
@@ -9,9 +11,12 @@ export default function LoginTop(){
                 </header>
             </section>
 
-            <section> 
-
+            <section className = "flex justify-center items-center"> 
+                <RxArrowDown 
+                    size={22}
+                />
             </section>
+
 
         </main>
         )
