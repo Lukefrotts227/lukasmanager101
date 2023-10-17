@@ -18,6 +18,10 @@ app.get('/api/hello', (req, res) =>{
     res.json({ message: "hello from express"})
 }); 
 
+app.get('/init/call', (req, res) => {
+    res.json({ message: "here is some info"})
+})
+
 
 
 
