@@ -1,16 +1,9 @@
-import { options } from "../api/auth/[...nextauth]/options";
 import { redirect } from "next/navigation";
 import { Prof } from "@/components/Profile";
-import { SignOut } from "@/components/SignOut";
 
 
-export default async function Profile(){
-    console.log(session.user.id); 
+export default function Profile(){
     
-
-  
-    {
-
         return(
             <main className="min-h-screen bg-gradient-to-t from-slate-200 to-slate-400">
                 <section>   
@@ -28,5 +21,4 @@ export default async function Profile(){
 
             </main>
             )
-    }
 }

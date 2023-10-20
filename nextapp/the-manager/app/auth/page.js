@@ -1,18 +1,12 @@
 
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
-import { options } from "../api/auth/[...nextauth]/options";
 
 import LoginForm from "@/components/LoginForm"
 import LoginTop from "@/components/LoginTop"; 
 
 
 export default async function Authenticate(){
-
-    const session = await getServerSession(options);
-    if(session){
-        redirect("/profile"); 
-    }else{
 
         return(
             
@@ -33,5 +27,4 @@ export default async function Authenticate(){
             </main>
         
         )
-        }
 }

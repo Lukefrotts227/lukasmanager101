@@ -1,11 +1,16 @@
+import { RegisterTop } from "@/components/RegisterTop"
+import RegisterForm from "@/components/RegisterForm"
+
 export default function Register(){
 
     return(
-        <main>
+        <main className="min-h-screen bg-gradient-to-t from-slate-200 to-slate-400">  
             <section> 
-                <header>
-                    <h1>Here is the reigister page</h1>
-                </header>
+                <RegisterTop />       
+            </section>
+            <section>
+                <RegisterForm />
+                
             </section>
         </main>)
 }
