@@ -39,6 +39,7 @@ export default function RegisterForm() {
 
             router.refresh()
             router.refresh('/profile'); 
+            router.push('/profile'); 
 
         }catch(e){
             console.error(e); 
