@@ -1,5 +1,5 @@
 import { RxArrowRight } from "react-icons/rx";
-import { Title } from '@/components/title'; 
+import { Title } from '@/components/main/title'; 
 import { StaticVerticalWave } from "@/components/graphics/staticwave";
 import Link from 'next/link'; 
 

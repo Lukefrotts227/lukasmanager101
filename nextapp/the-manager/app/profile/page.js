@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { Prof } from "@/components/Profile";
+import { Prof } from "@/components/main/profile";
 
 
 export default function Profile(){
