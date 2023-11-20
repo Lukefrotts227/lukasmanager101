@@ -1,6 +1,6 @@
-import { FaunaAdapter } from "@auth/fauna-adapter";
+import { PrismaAdapter } from "@auth/fauna-adapter";
 import GithubProvider from "next-auth/providers/github";
-import client from "../fauna/fauna";
+import client from "../prisma/prisma";
 
 const authOptions = {
     providers:[
@@ -9,7 +9,7 @@ const authOptions = {
             clientSecret: process.env.GITHUB_CLIENT_SECRET
         }),
     ],
-    adapter: FaunaAdapter({ faunaClient: client }),
+    adapter: PrismaAdapter({ faunaClient: client }),
     callbacks: {
         async redirect({ baseUrl }){
             return `${baseUrl}/profile`;
