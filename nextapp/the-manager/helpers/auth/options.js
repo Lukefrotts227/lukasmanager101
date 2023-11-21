@@ -14,7 +14,6 @@ const authOptions = {
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
         }),
 
-
     ],
     adapter: PrismaAdapter({ prisma }),
     callbacks: {
