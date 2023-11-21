@@ -14,6 +14,9 @@ export default function Home() {
             </header>
           </section>
           <section>
+            <Link href="/api/auth/signin">
+              signin
+            </Link>
             <Link href="/api/auth/signin/github">
                 <FaGithub size={99} />
             </Link>
